@@ -1,5 +1,5 @@
 import { render, screen, act, fireEvent } from '@testing-library/react';
-import { useCollapsible, UseCollapsibleOptions } from '../index';
+import {ContentProps, useCollapsible, UseCollapsibleOptions} from '../index';
 import { vi, describe, it, expect, beforeEach } from 'vitest';
 
 function TestComponent(props: UseCollapsibleOptions) {
@@ -53,7 +53,7 @@ describe('useCollapsible', () => {
         >;
 
         function Probe() {
-            const result = useCollapsible();
+            const result = useCollapsible<HTMLDivElement, HTMLButtonElement>();
             triggerProps = result.getTriggerProps();
             return <div {...result.getContentProps()} />;
         }
@@ -65,12 +65,10 @@ describe('useCollapsible', () => {
     });
 
     it('getContentProps returns ref and onTransitionEnd', () => {
-        let contentProps: ReturnType<
-            ReturnType<typeof useCollapsible>['getContentProps']
-        >;
+        let contentProps: ContentProps<HTMLDivElement>;
 
         function Probe() {
-            const result = useCollapsible();
+            const result = useCollapsible<HTMLDivElement, HTMLButtonElement>();
             contentProps = result.getContentProps();
             return <div {...contentProps} />;
         }
