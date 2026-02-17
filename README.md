@@ -1,8 +1,8 @@
-# react-use-collapsible
+# @imoses.g/react-use-collapsible
 
 [![CI](https://github.com/iMoses/react-use-collapsible/actions/workflows/ci.yml/badge.svg)](https://github.com/iMoses/react-use-collapsible/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/react-use-collapsible)](https://www.npmjs.com/package/react-use-collapsible)
-[![license](https://img.shields.io/npm/l/react-use-collapsible)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/%40imoses.g%2Freact-use-collapsible)](https://www.npmjs.com/package/@imoses.g/react-use-collapsible)
+[![license](https://img.shields.io/npm/l/%40imoses.g%2Freact-use-collapsible)](./LICENSE)
 
 A lightweight, headless React hook for building accessible collapsible/accordion components with smooth height transitions.
 
@@ -20,7 +20,7 @@ A lightweight, headless React hook for building accessible collapsible/accordion
 ## Installation
 
 ```bash
-npm install react-use-collapsible
+npm install @imoses.g/react-use-collapsible
 ```
 
 > **Peer dependency:** React 18 or later.
@@ -28,7 +28,7 @@ npm install react-use-collapsible
 ## Quick Start
 
 ```tsx
-import { useCollapsible } from 'react-use-collapsible';
+import { useCollapsible } from '@imoses.g/react-use-collapsible';
 
 function Collapsible() {
     const { isOpen, getTriggerProps, getContentProps } = useCollapsible<
@@ -84,7 +84,7 @@ import type {
     UseCollapsibleOutput,
     TriggerProps,
     ContentProps,
-} from 'react-use-collapsible';
+} from '@imoses.g/react-use-collapsible';
 ```
 
 ## Advanced Usage

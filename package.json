@@ -1,5 +1,5 @@
 {
-    "name": "react-use-collapsible",
+    "name": "@imoses.g/react-use-collapsible",
     "version": "1.0.0",
     "description": "A lightweight, headless React hook for building accessible collapsible/accordion components with smooth height transitions.",
     "type": "module",
