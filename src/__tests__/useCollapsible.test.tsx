@@ -1,5 +1,5 @@
 import { render, screen, act, fireEvent } from '@testing-library/react';
-import {ContentProps, useCollapsible, UseCollapsibleOptions} from '../index';
+import { ContentProps, useCollapsible, UseCollapsibleOptions } from '../index';
 import { vi, describe, it, expect, beforeEach } from 'vitest';
 
 function TestComponent(props: UseCollapsibleOptions) {
