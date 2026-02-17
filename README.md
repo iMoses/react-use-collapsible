@@ -150,6 +150,10 @@ function LazyCollapsible() {
 }
 ```
 
+## Acknowledgements
+
+Forked from [react-collapsible](https://github.com/glennflanagan/react-collapsible) by [Glenn Flanagan](https://github.com/glennflanagan).
+
 ## License
 
 [MIT](./LICENSE)
