@@ -17,6 +17,9 @@
         "dist"
     ],
     "sideEffects": false,
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "build": "tsup",
         "clean": "rm -rf dist",
