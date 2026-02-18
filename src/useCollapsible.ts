@@ -10,8 +10,8 @@ import {
 } from 'react';
 
 export function useCollapsible<
-    ContentType extends HTMLElement,
-    TriggerType extends HTMLElement,
+    ContentType extends HTMLElement = any,
+    TriggerType extends HTMLElement = any,
 >({
     open,
     disabled,
